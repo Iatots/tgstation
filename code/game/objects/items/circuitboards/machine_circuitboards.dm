@@ -1149,7 +1149,7 @@
 
 /obj/item/circuitboard/machine/bepis
 	name = "BEPIS Chamber (Machine Board)"
-	icon_state = "cargo"
+	icon_state = "supply"
 	build_path = /obj/machinery/rnd/bepis
 	req_components = list(
 		/obj/item/stack/cable_coil = 5,
@@ -1188,6 +1188,15 @@
 	icon_state = "security"
 	build_path = /obj/machinery/hypnochair
 	req_components = list(
+		/obj/item/stock_parts/micro_laser = 2,
+		/obj/item/stock_parts/scanning_module = 2
+	)
+
+/obj/item/circuitboard/machine/skill_station
+	name = "Skill Station (Machine Board)"
+	build_path = /obj/machinery/skill_station
+	req_components = list(
+		/obj/item/stock_parts/matter_bin = 2,
 		/obj/item/stock_parts/micro_laser = 2,
 		/obj/item/stock_parts/scanning_module = 2
 	)
